@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://172.18.0.2:3000/altair/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Altair</title>
+  <!--<base href="./">--><base href=".">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="http://172.18.0.2:3000/altair/favicon.ico">
+  <link href="./Altair_files/styles.css" rel="stylesheet">
+<style></style><style>
+    .cdk-overlay-container {
+      position: fixed;
+      z-index: 1000;
+      pointer-events: none;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .ngx-contextmenu.cdk-overlay-pane {
+      position: absolute;
+      pointer-events: auto;
+      box-sizing: border-box;
+    }
+  </style><style>[_nghost-xin-c330]{display:inline-block;width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round}</style><script charset="utf-8" src="./Altair_files/7.js"></script><style>.ngxp__container{display:none;position:absolute;border-radius:3px;border:1px solid grey;box-shadow:0 0 2px rgba(0,0,0,.5);padding:10px}.ngxp__container.ngxp__animation{-webkit-animation:150ms ease-out ngxp-fadeIn;animation:150ms ease-out ngxp-fadeIn}.ngxp__container>.ngxp__arrow{border-color:grey;width:0;height:0;border-style:solid;position:absolute;margin:5px}.ngxp__container[x-placement^=bottom],.ngxp__container[x-placement^=left],.ngxp__container[x-placement^=right],.ngxp__container[x-placement^=top]{display:block}.ngxp__container[x-placement^=top]{margin-bottom:5px}.ngxp__container[x-placement^=top]>.ngxp__arrow{border-width:5px 5px 0;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;bottom:-5px;left:calc(50% - 5px);margin-top:0;margin-bottom:0}.ngxp__container[x-placement^=top]>.ngxp__arrow.__force-arrow{border-right-color:transparent!important;border-bottom-color:transparent!important;border-left-color:transparent!important}.ngxp__container[x-placement^=bottom]{margin-top:5px}.ngxp__container[x-placement^=bottom]>.ngxp__arrow{border-width:0 5px 5px;border-top-color:transparent;border-right-color:transparent;border-left-color:transparent;top:-5px;left:calc(50% - 5px);margin-top:0;margin-bottom:0}.ngxp__container[x-placement^=bottom]>.ngxp__arrow.__force-arrow{border-top-color:transparent!important;border-right-color:transparent!important;border-left-color:transparent!important}.ngxp__container[x-placement^=right]{margin-left:5px}.ngxp__container[x-placement^=right]>.ngxp__arrow{border-width:5px 5px 5px 0;border-top-color:transparent;border-bottom-color:transparent;border-left-color:transparent;left:-5px;top:calc(50% - 5px);margin-left:0;margin-right:0}.ngxp__container[x-placement^=right]>.ngxp__arrow.__force-arrow{border-top-color:transparent!important;border-bottom-color:transparent!important;border-left-color:transparent!important}.ngxp__container[x-placement^=left]{margin-right:5px}.ngxp__container[x-placement^=left]>.ngxp__arrow{border-width:5px 0 5px 5px;border-top-color:transparent;border-bottom-color:transparent;border-right-color:transparent;right:-5px;top:calc(50% - 5px);margin-left:0;margin-right:0}.ngxp__container[x-placement^=left]>.ngxp__arrow.__force-arrow{border-top-color:transparent!important;border-bottom-color:transparent!important;border-right-color:transparent!important}@-webkit-keyframes ngxp-fadeIn{0%{display:none;opacity:0}1%{display:block;opacity:0}100%{display:block;opacity:1}}@keyframes ngxp-fadeIn{0%{display:none;opacity:0}1%{display:block;opacity:0}100%{display:block;opacity:1}}</style><script charset="utf-8" src="./Altair_files/6.js"></script></head>
+
+<body data-gr-c-s-loaded="true">
+  <app-root ng-version="9.1.9"><div dnd-droppable="" class="app-wrapper system-theme" style="cursor: pointer;">
+<nz-layout class="main-container ant-layout">
+    <!---->
+    <nz-header class="app-header ant-layout-header">
+      <div class="branding app-header__logo-wrapper">
+        <img src="./Altair_files/logo.svg" alt="logo" class="header-logo">
+      </div>
+
+      <app-window-switcher _nghost-xin-c340=""><ul _ngcontent-xin-c340="" nz-menu="" nzmode="horizontal" sortablejs="" class="app-header__menu header-nav window-switcher__container ant-menu ant-menu-root ant-menu-light ant-menu-horizontal">
+  <li _ngcontent-xin-c340="" nz-menu-item="" class="nav-link nav-text window-switcher ant-menu-item ng-star-inserted" draggable="false">
+    
+    <div _ngcontent-xin-c340="" class="window-switcher__input" contenteditable="false">Window 1</div>
+    <div _ngcontent-xin-c340="" track-id="close_window_tab" class="window-switcher__close ng-star-inserted">×</div><!---->
+  </li><li _ngcontent-xin-c340="" nz-menu-item="" class="nav-link nav-text window-switcher ant-menu-item ng-star-inserted" draggable="false">
+    
+    <div _ngcontent-xin-c340="" class="window-switcher__input" contenteditable="false">Window 2</div>
+    <div _ngcontent-xin-c340="" track-id="close_window_tab" class="window-switcher__close ng-star-inserted">×</div><!---->
+  </li><li _ngcontent-xin-c340="" nz-menu-item="" class="nav-link nav-text window-switcher ant-menu-item ng-star-inserted ant-menu-item-selected" draggable="false" style="">
+    
+    <div _ngcontent-xin-c340="" class="window-switcher__input" contenteditable="false">Window 4</div>
+    <div _ngcontent-xin-c340="" track-id="close_window_tab" class="window-switcher__close ng-star-inserted">×</div><!---->
+  </li><li _ngcontent-xin-c340="" nz-menu-item="" class="nav-link nav-text window-switcher ant-menu-item ng-star-inserted" draggable="false" style="">
+    
+    <div _ngcontent-xin-c340="" class="window-switcher__input" contenteditable="false">Window 3</div>
+    <div _ngcontent-xin-c340="" track-id="close_window_tab" class="window-switcher__close ng-star-inserted">×</div><!---->
+  </li><!---->
+  <li _ngcontent-xin-c340="" nz-menu-item="" class="nav-link nav-text window-switcher window-switcher--new-window ant-menu-item ng-star-inserted">
+    + Add new
+  </li><!---->
+</ul>
+<context-menu _ngcontent-xin-c340=""> </context-menu>
+</app-window-switcher>
+      <div class="header-actions">
+        <ul nz-menu="" nzmode="horizontal" class="app-header__menu app-header__menu-item--icon ant-menu ant-menu-root ant-menu-light ant-menu-horizontal">
+
+          <!---->
+
+          <li nz-menu-item="" nz-dropdown="" nztrigger="click" class="ant-menu-item ant-dropdown-trigger">
+            <!---->
+            <span class="ng-star-inserted">
+              <app-icon name="eye-off"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-eye-off">
+    <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line>
+</svg></i-feather>
+</app-icon>
+              <span>No environment</span>
+            </span><!---->
+          </li><!---->
+          <!---->
+          <li nz-menu-item="" nz-dropdown="" nztrigger="click" class="app-header__menu-item app-header__menu-item--icon ant-menu-item ant-dropdown-trigger">
+            <app-icon name="settings"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-settings">
+    <circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+</svg></i-feather>
+</app-icon>
+          </li><!---->
+          <!---->
+        </ul>
+      </div>
+    </nz-header>
+    <nz-layout class="ant-layout">
+      <!---->
+      <!---->
+      <!---->
+      <nz-layout class="inner-layout ant-layout">
+        <nz-content class="main-container-inner ant-layout-content">
+          <div class="app-side-menu">
+            <div class="side-menu__main">
+              <a track-id="show_set_headers" class="side-menu-item" aria-label="Set Headers">
+                <div class="side-menu-item-icon">
+                  <app-icon name="loader"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-loader">
+    <line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
+</svg></i-feather>
+</app-icon>
+                </div>
+                <div class="side-menu-item-label">
+                  Set Headers
+                </div>
+              </a>
+              <a track-id="show_set_variables" class="side-menu-item" aria-label="Set Variables">
+                <div class="side-menu-item-icon">
+                  <app-icon name="box"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-box">
+    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>
+</svg></i-feather>
+</app-icon>
+                </div>
+                <div class="side-menu-item-label">
+                  Set Variables
+                </div>
+              </a>
+              <a track-id="show_set_subscription_url" class="side-menu-item" aria-label="Subscription URL">
+                <div class="side-menu-item-icon">
+                  <app-icon name="repeat"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-repeat">
+    <polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
+</svg></i-feather>
+</app-icon>
+                </div>
+                <div class="side-menu-item-label">
+                  Subscription URL
+                </div>
+              </a>
+              <a track-id="show_history" class="side-menu-item" aria-label="History">
+                <div class="side-menu-item-icon">
+                  <app-icon name="watch"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-watch">
+    <circle cx="12" cy="12" r="7"></circle><polyline points="12 9 12 12 13.5 13.5"></polyline><path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"></path>
+</svg></i-feather>
+</app-icon>
+                </div>
+                <div class="side-menu-item-label">
+                  History
+                </div>
+              </a>
+              <a class="side-menu-item" aria-label="Pre-request Editor">
+                <div class="side-menu-item-icon">
+                  <app-icon name="code"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-code">
+    <polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline>
+</svg></i-feather>
+</app-icon>
+                </div>
+                <div class="side-menu-item-label">
+                  Pre-request Editor
+                </div>
+              </a>
+              <div class="side-menu-divider"></div>
+              <div class="side-menu-item">
+                <div class="side-menu-item-icon">
+                  <app-icon name="briefcase"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-briefcase">
+    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+</svg></i-feather>
+</app-icon>
+                </div>
+                <div class="side-menu-item-submenu">
+                  <a track-id="prettify" class="submenu-item" aria-label="Prettify">
+                    <div class="submenu-item-icon">
+                      <app-icon name="sun"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-sun">
+    <circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+</svg></i-feather>
+</app-icon>
+                    </div>
+                    <div class="submenu-item-label">
+                      Prettify
+                    </div>
+                  </a>
+                  <a track-id="compress_query" class="submenu-item" aria-label="Compress">
+                    <div class="submenu-item-icon">
+                      <app-icon name="minimize-2"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-minimize-2">
+    <polyline points="4 14 10 14 10 20"></polyline><polyline points="20 10 14 10 14 4"></polyline><line x1="14" y1="10" x2="21" y2="3"></line><line x1="3" y1="21" x2="10" y2="14"></line>
+</svg></i-feather>
+</app-icon>
+                    </div>
+                    <div class="submenu-item-label">
+                      Compress
+                    </div>
+                  </a>
+                  <a track-id="clear" class="submenu-item" aria-label="Clear">
+                    <div class="submenu-item-icon">
+                      <app-icon name="trash-2"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-trash-2">
+    <polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line>
+</svg></i-feather>
+</app-icon>
+                    </div>
+                    <div class="submenu-item-label">
+                      Clear
+                    </div>
+                  </a>
+                  <a track-id="copy_as_curl" class="submenu-item" aria-label="Copy as cURL">
+                    <div class="submenu-item-icon">
+                      <app-icon name="terminal"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-terminal">
+    <polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line>
+</svg></i-feather>
+</app-icon>
+                    </div>
+                    <div class="submenu-item-label">
+                      Copy as cURL
+                    </div>
+                  </a>
+                  <a track-id="convert_to_named_query" class="submenu-item" aria-label="Convert to named query">
+                    <div class="submenu-item-icon">
+                      <app-icon name="tag"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-tag">
+    <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg></i-feather>
+</app-icon>
+                    </div>
+                    <div class="submenu-item-label">
+                      Convert to named query
+                    </div>
+                  </a>
+                  <a class="submenu-item" aria-label="Refactor Query">
+                    <div class="submenu-item-icon">
+                      <app-icon name="disc"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-disc">
+    <circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle>
+</svg></i-feather>
+</app-icon>
+                    </div>
+                    <div class="submenu-item-label">
+                      Refactor Query
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="side-menu-divider"></div>
+    
+              <div class="side-menu__plugins">
+                <!---->
+              </div>
+    
+              <div class="side-menu__main-bottom">
+                <!---->
+                <a track-id="show_collections" class="side-menu-item" aria-label="Collections">
+                  <div class="side-menu-item-icon">
+                    <app-icon name="folder"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-folder">
+    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+</svg></i-feather>
+</app-icon>
+                  </div>
+                  <div class="side-menu-item-label">
+                    Collections
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="side-menu__extra">
+              <app-query-collections _nghost-xin-c350=""><div _ngcontent-xin-c350="" class="query-collections-wrapper query-collections-wrapper--close">
+  <div _ngcontent-xin-c350="" class="query-collections__inner">
+    <div _ngcontent-xin-c350="" class="query-collections__title">Collections</div>
+    <div _ngcontent-xin-c350="" class="query-collections__actions clearfix">
+        <button _ngcontent-xin-c350="" type="button" class="icon-button">
+          <app-icon _ngcontent-xin-c350="" name="log-in"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-log-in">
+    <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line>
+</svg></i-feather>
+</app-icon>
+        </button><popper-content class="ng-star-inserted">
+    <div class="ngxp__container ngxp__animation tooltip-content" aria-hidden="true" role="popper" style="display: none; opacity: 0;">
+      <!---->
+      <div class="ngxp__inner ng-star-inserted">
+        
+      </div><!---->
+      <div class="ngxp__arrow"></div>
+
+    </div>
+  </popper-content><!----><!---->
+        <div _ngcontent-xin-c350="" class="query-collections__actions--right">
+          <button _ngcontent-xin-c350="" nz-dropdown="" nztrigger="click" type="button" class="icon-button ant-dropdown-trigger">
+            
+              <!---->
+              <!---->
+              Newest<!----><!---->
+              <!---->
+            <!---->
+          </button><!---->
+          <!---->
+        </div>
+    </div>
+    <div _ngcontent-xin-c350="" class="query-collections__items-wrapper">
+      <!---->
+      <div _ngcontent-xin-c350="" class="query-collections__empty ng-star-inserted">
+        <div _ngcontent-xin-c350="" class="query-collections__empty-icon">
+          <app-icon _ngcontent-xin-c350="" name="sidebar" size="40"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-sidebar">
+    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line>
+</svg></i-feather>
+</app-icon>
+        </div>
+        <div _ngcontent-xin-c350="" class="query-collections__empty-description">
+          Your collections would appear here.
+        </div>
+      </div><!---->
+    </div>
+  </div>
+</div>
+</app-query-collections>
+            </div>
+          </div>
+          
+            <app-window class="ng-tns-c362-3 ng-star-inserted hide"><!---->
+<div class="app-window__content ng-tns-c362-3">
+  <!---->
+  <app-url-box class="ng-tns-c362-3"><div class="url-box">
+  <button type="button" nz-dropdown="" nztrigger="click" track-id="http_verb" class="url-box__button btn btn-outline-primary url-box__button--method ant-dropdown-trigger" value="POST">
+    POST
+    ▼
+  </button><!---->
+  <!---->
+  <div class="url-box__input-container">
+    <!---->
+    <app-fancy-input track-id="set_url" placholder="Enter URL" class="url-box__input ng-untouched ng-pristine ng-valid" _nghost-xin-c338=""><div _ngcontent-xin-c338="" class="fancy-input-container"><div _ngcontent-xin-c338="" class="fancy-input-backdrop"><div _ngcontent-xin-c338="" class="fancy-input-content fancy-input-highlights"><span _ngcontent-xin-c338="" class="ng-star-inserted">http://172.18.0.2:3000/graphql</span><!----><!----><!----><!----></div></div><input _ngcontent-xin-c338="" type="text" class="fancy-input-content fancy-input-element ng-untouched ng-pristine ng-valid" placeholder=""></div></app-fancy-input>
+    <div class="url-box__input-actions">
+      <button type="button" nz-dropdown="" nztrigger="click" class="url-box__input-btn ant-dropdown-trigger">
+        <app-icon name="save"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-save">
+    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline>
+</svg></i-feather>
+</app-icon>
+      </button><!---->
+      <!---->
+      <button type="button" track-id="reload_docs" class="url-box__input-btn">
+        <app-icon name="refresh-ccw"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-refresh-ccw">
+    <polyline points="1 4 1 10 7 10"></polyline><polyline points="23 20 23 14 17 14"></polyline><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+</svg></i-feather>
+</app-icon>
+      </button><popper-content class="ng-star-inserted">
+    <div class="ngxp__container ngxp__animation tooltip-content" aria-hidden="true" role="popper" style="display: none; opacity: 0;">
+      <!---->
+      <div class="ngxp__inner ng-star-inserted">
+        
+      </div><!---->
+      <div class="ngxp__arrow"></div>
+
+    </div>
+  </popper-content><!----><!---->
+      <button type="button" track-id="show_docs" class="url-box__input-btn url-box__input-btn--active">
+        Docs
+      </button>
+    </div>
+  </div>
+  <button track-id="set_request" class="app-button url-box__button url-box__button--send active-primary ng-star-inserted">
+    <!---->
+    <span class="ng-star-inserted">Send Request</span><!---->
+  </button><!---->
+  <!---->
+  <!---->
+</div>
+</app-url-box>
+  <div class="main-content-area ng-tns-c362-3">
+    <div data-resize-container="" class="main-content-row ng-tns-c362-3">
+      <app-query-editor class="ng-tns-c362-3" _nghost-xin-c335=""><div _ngcontent-xin-c335="" class="query-editor-container">
+  <ngx-codemirror _ngcontent-xin-c335="" class="query-editor__input ng-untouched ng-pristine ng-valid"><textarea autocomplete="off" class="ngx-codemirror" name="codemirror" style="display: none;">    </textarea><div class="CodeMirror cm-s-default CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 26px; left: 43px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 562px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; padding-right: 15px; padding-bottom: 0px; margin-bottom: -15px; border-right-width: 35px; min-height: 562px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>28</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 22px; height: 19px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-linewidget" cm-ignore-events="true"><div class="query-editor__line-widget">► (Run query)</div></div><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-punctuation CodeMirror-matchingbracket">{</span><span class="cm-property">users</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span><span class="cm-property">pageInfo</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp;</span><span class="cm-property">hasNextPage</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp;</span><span class="cm-property">hasPreviousPage</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp;</span><span class="cm-property">startCursor</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp;</span><span class="cm-property">endCursor</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span><span class="cm-punctuation">}</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span><span class="cm-property">edges</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp;</span><span class="cm-property">node</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">id</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">email</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">roles</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">displayName</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">name</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">gender</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">dob</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">status</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">meta</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">photoUrl</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">timeZone</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">21</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">createdAt</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">updatedAt</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">23</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">lastLoginAt</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">24</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp;</span><span class="cm-punctuation">}</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">25</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp;</span><span class="cm-property">cursor</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">26</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span><span class="cm-punctuation">}</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">27</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span><span class="cm-property">totalCount</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">28</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-punctuation">}</span><span class="cm-punctuation CodeMirror-matchingbracket">}</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 35px; width: 1px; border-bottom: 0px solid transparent; top: 562px;"></div><div class="CodeMirror-gutters" style="left: 0px; height: 597px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div></ngx-codemirror>
+</div>
+<div _ngcontent-xin-c335="" class="variables-editor-container">
+  <div _ngcontent-xin-c335="" track-id="toggle_variables" class="variables-editor--title">Variables</div>
+  <div _ngcontent-xin-c335="" class="variables-editor-inner hide">
+    <div _ngcontent-xin-c335="" class="variables-editor-input-container">
+      <app-variables-editor _ngcontent-xin-c335="" _nghost-xin-c332=""><ngx-codemirror _ngcontent-xin-c332="" class="set-variable-textarea mousetrap ng-untouched ng-pristine ng-valid"><textarea autocomplete="off" class="ngx-codemirror" name="codemirror" style="display: none;">    </textarea><div class="CodeMirror cm-s-default cm-s-variable-editor cm-s-mousetrap CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px;"><div style="position: relative;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"></div><div class="CodeMirror-code" role="presentation"></div></div></div></div></div><div style="position: absolute; height: 50px; width: 1px;"></div><div class="CodeMirror-gutters" style="left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 1px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div></ngx-codemirror>
+</app-variables-editor>
+    </div>
+    <div _ngcontent-xin-c335="" class="variables-files-container">
+      <button _ngcontent-xin-c335="" track-id="add_file_variable" class="variables-add-files-button">Add files</button>
+
+      <a _ngcontent-xin-c335="" href="https://sirmuel.design/working-with-file-uploads-using-altair-graphql-d2f86dc8261f" target="_blank" rel="noopener">
+        <app-icon _ngcontent-xin-c335="" name="info"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-info">
+    <circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line>
+</svg></i-feather>
+</app-icon>
+        Learn more
+      </a>
+
+      <div _ngcontent-xin-c335="" class="variables-files-list">
+        <!---->
+      </div>
+    </div>
+  </div>
+</div>
+<app-flex-resizer _ngcontent-xin-c335="" _nghost-xin-c334="" class="is-right"><app-icon _ngcontent-xin-c334="" name="more-vertical"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-more-vertical">
+    <circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle>
+</svg></i-feather>
+</app-icon></app-flex-resizer>
+</app-query-editor>
+      <app-query-result class="ng-tns-c362-3" _nghost-xin-c337=""><div _ngcontent-xin-c337="" class="query-result-container">
+  <div _ngcontent-xin-c337="" class="query-result__normal-container">
+    <!---->
+    
+    <div _ngcontent-xin-c337="" class="app-result">
+      <div _ngcontent-xin-c337="" class="response-stats">
+        <div _ngcontent-xin-c337="" class="left">
+          <span _ngcontent-xin-c337="" class="response-status-code response-stats__item" data-status-code="200">200 OK</span>
+          <span _ngcontent-xin-c337="" class="response-time response-stats__item"><app-icon _ngcontent-xin-c337="" name="clock"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-clock">
+    <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg></i-feather>
+</app-icon> 237ms</span>
+        </div>
+        <div _ngcontent-xin-c337="" class="right">
+        </div>
+      </div>
+      <div _ngcontent-xin-c337="" class="query-result__bottom-actions">
+        <button _ngcontent-xin-c337="" track-id="download_result" class="query-result__download-button">
+          <app-icon _ngcontent-xin-c337="" name="download"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-download">
+    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line>
+</svg></i-feather>
+</app-icon>
+          Download
+        </button>
+        <!---->
+      </div>
+      <ngx-codemirror _ngcontent-xin-c337="" class="app-query-result-textarea ng-untouched ng-pristine ng-valid"><textarea autocomplete="off" class="ngx-codemirror" name="codemirror" style="display: none;">    </textarea><div class="CodeMirror cm-s-default cm-s-query-result CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 43px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 1452px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; padding-right: 15px; padding-bottom: 0px; margin-bottom: -15px; border-right-width: 35px; min-height: 1452px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>63</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 19px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span><span class="cm-def">"data"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp;</span><span class="cm-property">"users"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"pageInfo"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"hasNextPage"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-builtin">false</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"hasPreviousPage"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-builtin">false</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"startCursor"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"YXJyYXljb25uZWN0aW9uOjA="</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"endCursor"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"YXJyYXljb25uZWN0aW9uOjE="</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-punctuation">},</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"edges"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">[</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"node"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"id"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"VXNlcjo1YTIxYTRhZC0xNzhjLTQ5YzQtODljZS01NDllMTMyMjE0ODk="</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"email"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"yash@getnovaapp.com"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"roles"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">[</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-string">"user"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-string">"org_member"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-string">"org_admin"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-string">"admin"</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-punctuation">],</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">21</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"displayName"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"Yash"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"name"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"Yash Gupta"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">23</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"gender"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"male"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">24</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"dob"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"1995-01-16T00:00:00+00:00"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">25</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"status"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"created"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">26</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"meta"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">{},</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">27</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"photoUrl"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-keyword">null</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">28</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"timeZone"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-keyword">null</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">29</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"createdAt"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"2020-07-15T06:55:35+00:00"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">30</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"updatedAt"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"2020-07-15T06:55:35+00:00"</span><span class="cm-punctuation">,</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 35px; width: 1px; border-bottom: 0px solid transparent; top: 1452px;"></div><div class="CodeMirror-gutters" style="left: 0px; height: 1487px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div></ngx-codemirror>
+    </div>
+  </div>
+  <div _ngcontent-xin-c337="" class="query-result__subscription-container hide">
+    <div _ngcontent-xin-c337="" class="subscription-result">
+      <div _ngcontent-xin-c337="" class="subscription-result__actions">
+          <div _ngcontent-xin-c337="" class="subscription-result__actions-left">
+            <div _ngcontent-xin-c337="" class="subscription-result__actions-url">
+              ws://localhost/subscriptions
+            </div>
+          </div>
+          <div _ngcontent-xin-c337="" class="subscription-result__actions-right">
+            <button _ngcontent-xin-c337="" track-id="clear_subscription" class="subscription-button">Clear</button>
+            <button _ngcontent-xin-c337="" track-id="stop_subscription" class="subscription-button subscription-button--stop">Stop</button>
+          </div>
+      </div>
+      <div _ngcontent-xin-c337="" class="subscription-result__list-wrapper">
+        <!---->
+      </div>
+      <div _ngcontent-xin-c337="" class="subscription-result__float-actions">
+        <button _ngcontent-xin-c337="" class="subscription-result__float-action-button">
+          Autoscroll
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</app-query-result>
+      <app-doc-viewer class="ng-tns-c362-3 ng-tns-c361-4"><div class="app-doc-viewer ng-tns-c361-4 ng-star-inserted">
+  <!---->
+  <div class="doc-viewer-header ng-tns-c361-4">
+    <div class="doc-viewer-navigation ng-tns-c361-4">
+      <div class="doc-viewer-navigation--left ng-tns-c361-4">
+        <!---->
+        <div class="doc-viewer-navigation__option ng-tns-c361-4 ng-star-inserted">
+          <app-icon name="home" class="ng-tns-c361-4"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-home">
+    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg></i-feather>
+</app-icon>
+        </div><!---->
+      </div>
+      <div class="doc-viewer-navigation--right ng-tns-c361-4">
+        <div nz-dropdown="" nztrigger="click" class="doc-viewer-navigation__option ng-tns-c361-4 ant-dropdown-trigger">
+          <app-icon name="more-horizontal" class="ng-tns-c361-4"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-more-horizontal">
+    <circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle>
+</svg></i-feather>
+</app-icon>
+        </div><!---->
+        <!---->
+        <div class="doc-viewer-navigation__option ng-tns-c361-4">
+          <app-icon name="x" class="ng-tns-c361-4"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-x">
+    <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+</svg></i-feather>
+</app-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="doc-viewer-search-wrapper ng-tns-c361-4">
+    <div class="ngui-auto-complete-wrapper" style="position: relative;"><input ngui-auto-complete="" value-property-name="search" display-property-name="search" class="doc-viewer-search-input ng-tns-c361-4 ng-untouched ng-pristine ng-valid" placeholder="Search docs..." autocomplete="off"></div><!---->
+  </div>
+  <div class="doc-viewer-items ng-tns-c361-4">
+    <div class="ng-tns-c361-4 ng-star-inserted">
+      <!---->
+      <!---->
+      
+        <app-doc-viewer-field _nghost-xin-c359="" class="ng-tns-c361-4 ng-star-inserted">
+  <div _ngcontent-xin-c359="" class="doc-viewer-section ng-star-inserted">
+    
+    <div _ngcontent-xin-c359="" class="doc-viewer-item doc-viewer-item-field">
+      <div _ngcontent-xin-c359="" class="doc-viewer-item-query-inner">
+        users
+      </div>
+      <div _ngcontent-xin-c359="" markdown="" class="doc-viewer-item-query-description"></div>
+      <div _ngcontent-xin-c359="" class="doc-viewer-item-query-inner">
+        <button _ngcontent-xin-c359="" track-id="add_query" class="doc-viewer-item-query-add-btn">
+          Add Query<!----><!---->
+          <!---->
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div _ngcontent-xin-c359="" class="doc-viewer-section doc-viewer-arguments ng-star-inserted">
+    <div _ngcontent-xin-c359="" class="doc-viewer-section-title">Arguments</div>
+    <div _ngcontent-xin-c359="" class="doc-viewer-item doc-viewer-item-query ng-star-inserted">
+      <div _ngcontent-xin-c359="" class="doc-viewer-item-query-inner">
+        <span _ngcontent-xin-c359="" class="no-link-link">
+          after
+          <!---->
+        </span>
+        <span _ngcontent-xin-c359="" class="doc-viewer-item-type doc-viewer-item-query-type no-link-link">
+          String
+        </span>
+      </div>
+      <div _ngcontent-xin-c359="" markdown="" class="doc-viewer-item-query-description"></div>
+    </div><div _ngcontent-xin-c359="" class="doc-viewer-item doc-viewer-item-query ng-star-inserted">
+      <div _ngcontent-xin-c359="" class="doc-viewer-item-query-inner">
+        <span _ngcontent-xin-c359="" class="no-link-link">
+          first
+          <!---->
+        </span>
+        <span _ngcontent-xin-c359="" class="doc-viewer-item-type doc-viewer-item-query-type no-link-link">
+          Int
+        </span>
+      </div>
+      <div _ngcontent-xin-c359="" markdown="" class="doc-viewer-item-query-description"></div>
+    </div><div _ngcontent-xin-c359="" class="doc-viewer-item doc-viewer-item-query ng-star-inserted">
+      <div _ngcontent-xin-c359="" class="doc-viewer-item-query-inner">
+        <span _ngcontent-xin-c359="" class="no-link-link">
+          query
+          <!---->
+        </span>
+        <span _ngcontent-xin-c359="" class="doc-viewer-item-type doc-viewer-item-query-type no-link-link">
+          String
+        </span>
+      </div>
+      <div _ngcontent-xin-c359="" markdown="" class="doc-viewer-item-query-description"></div>
+    </div><!---->
+  </div><!---->
+<!----><!---->
+
+
+<div _ngcontent-xin-c359="" class="doc-viewer-section-title">Type</div>
+
+  <app-doc-viewer-type _ngcontent-xin-c359="" _nghost-xin-c358="" class="ng-star-inserted">
+  <div _ngcontent-xin-c358="" class="doc-viewer-section ng-star-inserted">
+    
+    <div _ngcontent-xin-c358="" class="doc-viewer-item doc-viewer-item-field">
+      <div _ngcontent-xin-c358="" class="doc-viewer-item-query-inner">
+        UserConnection
+        <!---->
+        <!---->
+      </div>
+      <div _ngcontent-xin-c358="" markdown="" class="doc-viewer-item-query-description ng-star-inserted"><p>A connection to a list of items.</p>
+</div><!---->
+    </div>
+  </div>
+
+  <!---->
+  
+  <!---->
+  
+  <div _ngcontent-xin-c358="" class="doc-viewer-section doc-viewer-fields ng-star-inserted">
+    <div _ngcontent-xin-c358="" class="doc-viewer-section-title">Fields</div>
+    <div _ngcontent-xin-c358="" class="doc-viewer-item doc-viewer-item-query ng-star-inserted">
+      <div _ngcontent-xin-c358="" class="doc-viewer-item-query-inner">
+        <span _ngcontent-xin-c358="" track-id="gotofield_docs" class="no-link-link">
+          pageInfo
+        </span>
+        <!---->
+        <span _ngcontent-xin-c358="" class="doc-viewer-item-type doc-viewer-item-query-type no-link-link">
+          PageInfo!
+        </span>
+      </div>
+      <!---->
+      <div _ngcontent-xin-c358="" markdown="" class="doc-viewer-item-query-description"><p>Information to aid in pagination.</p>
+</div>
+      <button _ngcontent-xin-c358="" track-id="add_query" class="doc-viewer-item-query-add-btn">
+        <!---->
+        Add Fragment<!----><!---->
+      </button>
+    </div><div _ngcontent-xin-c358="" class="doc-viewer-item doc-viewer-item-query ng-star-inserted">
+      <div _ngcontent-xin-c358="" class="doc-viewer-item-query-inner">
+        <span _ngcontent-xin-c358="" track-id="gotofield_docs" class="no-link-link">
+          edges
+        </span>
+        <!---->
+        <span _ngcontent-xin-c358="" class="doc-viewer-item-type doc-viewer-item-query-type no-link-link">
+          [UserEdge]
+        </span>
+      </div>
+      <!---->
+      <div _ngcontent-xin-c358="" markdown="" class="doc-viewer-item-query-description"><p>A list of edges.</p>
+</div>
+      <button _ngcontent-xin-c358="" track-id="add_query" class="doc-viewer-item-query-add-btn">
+        <!---->
+        Add Fragment<!----><!---->
+      </button>
+    </div><div _ngcontent-xin-c358="" class="doc-viewer-item doc-viewer-item-query ng-star-inserted">
+      <div _ngcontent-xin-c358="" class="doc-viewer-item-query-inner">
+        <span _ngcontent-xin-c358="" track-id="gotofield_docs" class="no-link-link">
+          totalCount
+        </span>
+        <!---->
+        <span _ngcontent-xin-c358="" class="doc-viewer-item-type doc-viewer-item-query-type no-link-link">
+          Int!
+        </span>
+      </div>
+      <!---->
+      <div _ngcontent-xin-c358="" markdown="" class="doc-viewer-item-query-description"></div>
+      <button _ngcontent-xin-c358="" track-id="add_query" class="doc-viewer-item-query-add-btn">
+        <!---->
+        Add Fragment<!----><!---->
+      </button>
+    </div><!---->
+  </div><!---->
+  
+  <!---->
+  
+  <!---->
+<!---->
+</app-doc-viewer-type>
+<!----><!---->
+</app-doc-viewer-field>
+      <!----><!---->
+      <!---->
+    </div><!---->
+  </div>
+</div><!---->
+<div class="doc-viewer__last-updated ng-tns-c361-4 ng-star-inserted">Last updated: Jul 15, 2020, 2:33:43 AM</div><!---->
+<!---->
+<app-flex-resizer class="ng-tns-c361-4" _nghost-xin-c334=""><app-icon _ngcontent-xin-c334="" name="more-vertical"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-more-vertical">
+    <circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle>
+</svg></i-feather>
+</app-icon></app-flex-resizer>
+</app-doc-viewer>
+    </div>
+  </div>
+  <div class="dialogs ng-tns-c362-3">
+    <nz-modal class="ng-tns-c362-3"> <!----> </nz-modal><!---->
+    <app-subscription-url-dialog class="ng-tns-c362-3"><nz-modal> <!----> </nz-modal><!---->
+</app-subscription-url-dialog>
+    <app-history-dialog class="ng-tns-c362-3"><nz-modal> <!----> </nz-modal><!---->
+</app-history-dialog>
+    <app-dialog class="ng-tns-c362-3" _nghost-xin-c351=""><nz-modal _ngcontent-xin-c351=""> <!----> </nz-modal><!---->
+</app-dialog>
+    <app-dialog class="ng-tns-c362-3" _nghost-xin-c351=""><nz-modal _ngcontent-xin-c351=""> <!----> </nz-modal><!---->
+</app-dialog>
+  </div>
+</div>
+</app-window><!---->
+          <!---->
+            <app-window class="ng-tns-c362-8 ng-star-inserted hide"><!---->
+<div class="app-window__content ng-tns-c362-8">
+  <!---->
+  <app-url-box class="ng-tns-c362-8"><div class="url-box">
+  <button type="button" nz-dropdown="" nztrigger="click" track-id="http_verb" class="url-box__button btn btn-outline-primary url-box__button--method ant-dropdown-trigger" value="POST">
+    POST
+    ▼
+  </button><!---->
+  <!---->
+  <div class="url-box__input-container">
+    <!---->
+    <app-fancy-input track-id="set_url" placholder="Enter URL" class="url-box__input ng-untouched ng-pristine ng-valid" _nghost-xin-c338=""><div _ngcontent-xin-c338="" class="fancy-input-container"><div _ngcontent-xin-c338="" class="fancy-input-backdrop"><div _ngcontent-xin-c338="" class="fancy-input-content fancy-input-highlights"><span _ngcontent-xin-c338="" class="ng-star-inserted">http://172.18.0.2:3000/graphql</span><!----><!----><!----><!----></div></div><input _ngcontent-xin-c338="" type="text" class="fancy-input-content fancy-input-element ng-untouched ng-pristine ng-valid" placeholder=""></div></app-fancy-input>
+    <div class="url-box__input-actions">
+      <button type="button" nz-dropdown="" nztrigger="click" class="url-box__input-btn ant-dropdown-trigger">
+        <app-icon name="save"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-save">
+    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline>
+</svg></i-feather>
+</app-icon>
+      </button><!---->
+      <!---->
+      <button type="button" track-id="reload_docs" class="url-box__input-btn">
+        <app-icon name="refresh-ccw"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-refresh-ccw">
+    <polyline points="1 4 1 10 7 10"></polyline><polyline points="23 20 23 14 17 14"></polyline><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+</svg></i-feather>
+</app-icon>
+      </button><popper-content class="ng-star-inserted">
+    <div class="ngxp__container ngxp__animation tooltip-content" aria-hidden="true" role="popper" style="display: none; opacity: 0;">
+      <!---->
+      <div class="ngxp__inner ng-star-inserted">
+        
+      </div><!---->
+      <div class="ngxp__arrow"></div>
+
+    </div>
+  </popper-content><!----><!---->
+      <button type="button" track-id="show_docs" class="url-box__input-btn">
+        Docs
+      </button>
+    </div>
+  </div>
+  <button track-id="set_request" class="app-button url-box__button url-box__button--send active-primary ng-star-inserted">
+    <!---->
+    <span class="ng-star-inserted">Send Request</span><!---->
+  </button><!---->
+  <!---->
+  <!---->
+</div>
+</app-url-box>
+  <div class="main-content-area ng-tns-c362-8">
+    <div data-resize-container="" class="main-content-row ng-tns-c362-8">
+      <app-query-editor class="ng-tns-c362-8" _nghost-xin-c335=""><div _ngcontent-xin-c335="" class="query-editor-container">
+  <ngx-codemirror _ngcontent-xin-c335="" class="query-editor__input ng-untouched ng-pristine ng-valid"><textarea autocomplete="off" class="ngx-codemirror" name="codemirror" style="display: none;">    </textarea><div class="CodeMirror cm-s-default CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 26px; left: 43px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 1018px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; padding-right: 15px; padding-bottom: 0px; margin-bottom: -15px; border-right-width: 35px; min-height: 1018px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>52</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 22px; height: 19px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-linewidget" cm-ignore-events="true"><div class="query-editor__line-widget">► (Run mutation)</div></div><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">mutation</span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span><span class="cm-property">authenticateUser</span><span class="cm-punctuation">(</span><span class="cm-attribute">input</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp;</span><span class="cm-attribute">email</span><span class="cm-ws"> </span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"yash@getnovaapp.com"</span><span class="cm-ws">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp;</span><span class="cm-attribute">password</span><span class="cm-ws"> </span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"password123"</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span><span class="cm-punctuation">})</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp;</span><span class="cm-property">token</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp;</span><span class="cm-property">user</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">id</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">email</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">roles</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">displayName</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">name</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">gender</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">dob</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">status</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">org</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">id</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">name</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">address</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">pincode</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">21</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">meta</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">createdAt</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">23</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">updatedAt</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">24</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-punctuation">}</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">25</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">dependents</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">26</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">id</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">27</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">name</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">28</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">gender</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">29</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">relation</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">30</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">dob</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">31</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">photoUrl</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">32</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-punctuation">}</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">33</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">meta</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 35px; width: 1px; border-bottom: 0px solid transparent; top: 1018px;"></div><div class="CodeMirror-gutters" style="left: 0px; height: 1053px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div></ngx-codemirror>
+</div>
+<div _ngcontent-xin-c335="" class="variables-editor-container">
+  <div _ngcontent-xin-c335="" track-id="toggle_variables" class="variables-editor--title">Variables</div>
+  <div _ngcontent-xin-c335="" class="variables-editor-inner hide">
+    <div _ngcontent-xin-c335="" class="variables-editor-input-container">
+      <app-variables-editor _ngcontent-xin-c335="" _nghost-xin-c332=""><ngx-codemirror _ngcontent-xin-c332="" class="set-variable-textarea mousetrap ng-untouched ng-pristine ng-valid"><textarea autocomplete="off" class="ngx-codemirror" name="codemirror" style="display: none;">    </textarea><div class="CodeMirror cm-s-default cm-s-variable-editor cm-s-mousetrap CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px;"><div style="position: relative;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"></div><div class="CodeMirror-code" role="presentation"></div></div></div></div></div><div style="position: absolute; height: 50px; width: 1px;"></div><div class="CodeMirror-gutters" style="left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 1px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div></ngx-codemirror>
+</app-variables-editor>
+    </div>
+    <div _ngcontent-xin-c335="" class="variables-files-container">
+      <button _ngcontent-xin-c335="" track-id="add_file_variable" class="variables-add-files-button">Add files</button>
+
+      <a _ngcontent-xin-c335="" href="https://sirmuel.design/working-with-file-uploads-using-altair-graphql-d2f86dc8261f" target="_blank" rel="noopener">
+        <app-icon _ngcontent-xin-c335="" name="info"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-info">
+    <circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line>
+</svg></i-feather>
+</app-icon>
+        Learn more
+      </a>
+
+      <div _ngcontent-xin-c335="" class="variables-files-list">
+        <!---->
+      </div>
+    </div>
+  </div>
+</div>
+<app-flex-resizer _ngcontent-xin-c335="" _nghost-xin-c334="" class="is-right"><app-icon _ngcontent-xin-c334="" name="more-vertical"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-more-vertical">
+    <circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle>
+</svg></i-feather>
+</app-icon></app-flex-resizer>
+</app-query-editor>
+      <app-query-result class="ng-tns-c362-8" _nghost-xin-c337=""><div _ngcontent-xin-c337="" class="query-result-container">
+  <div _ngcontent-xin-c337="" class="query-result__normal-container">
+    <!---->
+    
+    <div _ngcontent-xin-c337="" class="app-result">
+      <div _ngcontent-xin-c337="" class="response-stats">
+        <div _ngcontent-xin-c337="" class="left">
+          <span _ngcontent-xin-c337="" class="response-status-code response-stats__item" data-status-code="200">200 OK</span>
+          <span _ngcontent-xin-c337="" class="response-time response-stats__item"><app-icon _ngcontent-xin-c337="" name="clock"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-clock">
+    <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg></i-feather>
+</app-icon> 96ms</span>
+        </div>
+        <div _ngcontent-xin-c337="" class="right">
+        </div>
+      </div>
+      <div _ngcontent-xin-c337="" class="query-result__bottom-actions">
+        <button _ngcontent-xin-c337="" track-id="download_result" class="query-result__download-button">
+          <app-icon _ngcontent-xin-c337="" name="download"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-download">
+    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line>
+</svg></i-feather>
+</app-icon>
+          Download
+        </button>
+        <!---->
+      </div>
+      <ngx-codemirror _ngcontent-xin-c337="" class="app-query-result-textarea ng-pristine ng-valid ng-touched"><textarea autocomplete="off" class="ngx-codemirror" name="codemirror" style="display: none;">    </textarea><div class="CodeMirror cm-s-default cm-s-query-result CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 155.5px; left: 247.375px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 863px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; padding-right: 15px; padding-bottom: 0px; margin-bottom: -15px; border-right-width: 35px; min-height: 863px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like">x</pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"><div class="CodeMirror-selected" style="position: absolute; left: 8.96875px; top: 76px; width: 570.031px; height: 19px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 95px; width: 575px; height: 57px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 152px; width: 204.375px; height: 19px;"></div></div><div class="CodeMirror-cursors" style=""></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span><span class="cm-def">"data"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp;</span><span class="cm-property">"authenticateUser"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"token"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVhMjFhNGFkLTE3OGMtNDljNC04OWNlLTU0OWUxMzIyMTQ4OSIsInJvbGVzIjpbInVzZXIiLCJvcmdfbWVtYmVyIiwib3JnX2FkbWluIiwiYWRtaW4iXSwib3JnX2lkIjoiMjU3OWRmNmItZmNjZi00OTZkLTg1YmEtY2Y2NWY1NWQ3NTllIiwiaWF0IjoxNTk1MjcwMjA2LCJleHAiOjE2MjY4MDYyMDZ9.Y_gJkEg8GpZayQsUgqqweyq_yMMBeECU8bww3UffST4"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"user"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"id"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"VXNlcjo1YTIxYTRhZC0xNzhjLTQ5YzQtODljZS01NDllMTMyMjE0ODk="</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"email"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"yash@getnovaapp.com"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"roles"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">[</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-string">"user"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-string">"org_member"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-string">"org_admin"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-string">"admin"</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-punctuation">],</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"displayName"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"Yash"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"name"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"Yash Gupta"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"gender"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"male"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"dob"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"1995-01-16T00:00:00+00:00"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"status"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"created"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">19</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"org"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"id"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"T3JnOjI1NzlkZjZiLWZjY2YtNDk2ZC04NWJhLWNmNjVmNTVkNzU5ZQ=="</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">21</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"name"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"Nova"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"address"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"Koramangla"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">23</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"pincode"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"560095"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">24</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"meta"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">{},</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">25</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"createdAt"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"2020-07-15T06:55:35+00:00"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">26</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"updatedAt"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"2020-07-15T06:55:35+00:00"</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">27</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-punctuation">},</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">28</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"dependents"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">[],</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">29</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"meta"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">{},</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">30</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"photoUrl"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-keyword">null</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">31</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"timeZone"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-keyword">null</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">32</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"createdAt"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"2020-07-15T06:55:35+00:00"</span><span class="cm-punctuation">,</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 35px; width: 1px; border-bottom: 0px solid transparent; top: 863px;"></div><div class="CodeMirror-gutters" style="left: 0px; height: 898px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div></ngx-codemirror>
+    </div>
+  </div>
+  <div _ngcontent-xin-c337="" class="query-result__subscription-container hide">
+    <div _ngcontent-xin-c337="" class="subscription-result">
+      <div _ngcontent-xin-c337="" class="subscription-result__actions">
+          <div _ngcontent-xin-c337="" class="subscription-result__actions-left">
+            <div _ngcontent-xin-c337="" class="subscription-result__actions-url">
+              ws://localhost/subscriptions
+            </div>
+          </div>
+          <div _ngcontent-xin-c337="" class="subscription-result__actions-right">
+            <button _ngcontent-xin-c337="" track-id="clear_subscription" class="subscription-button">Clear</button>
+            <button _ngcontent-xin-c337="" track-id="stop_subscription" class="subscription-button subscription-button--stop">Stop</button>
+          </div>
+      </div>
+      <div _ngcontent-xin-c337="" class="subscription-result__list-wrapper">
+        <!---->
+      </div>
+      <div _ngcontent-xin-c337="" class="subscription-result__float-actions">
+        <button _ngcontent-xin-c337="" class="subscription-result__float-action-button">
+          Autoscroll
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</app-query-result>
+      <app-doc-viewer class="ng-tns-c362-8 ng-tns-c361-9 hide-doc"><div class="app-doc-viewer ng-tns-c361-9 ng-star-inserted">
+  <!---->
+  <div class="doc-viewer-header ng-tns-c361-9">
+    <div class="doc-viewer-navigation ng-tns-c361-9">
+      <div class="doc-viewer-navigation--left ng-tns-c361-9">
+        <!---->
+        <!---->
+      </div>
+      <div class="doc-viewer-navigation--right ng-tns-c361-9">
+        <div nz-dropdown="" nztrigger="click" class="doc-viewer-navigation__option ng-tns-c361-9 ant-dropdown-trigger">
+          <app-icon name="more-horizontal" class="ng-tns-c361-9"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-more-horizontal">
+    <circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle>
+</svg></i-feather>
+</app-icon>
+        </div><!---->
+        <!---->
+        <div class="doc-viewer-navigation__option ng-tns-c361-9">
+          <app-icon name="x" class="ng-tns-c361-9"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-x">
+    <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+</svg></i-feather>
+</app-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="doc-viewer-search-wrapper ng-tns-c361-9">
+    <div class="ngui-auto-complete-wrapper" style="position: relative;"><input ngui-auto-complete="" value-property-name="search" display-property-name="search" class="doc-viewer-search-input ng-tns-c361-9 ng-untouched ng-pristine ng-valid" placeholder="Search docs..." autocomplete="off"></div><!---->
+  </div>
+  <div class="doc-viewer-items ng-tns-c361-9">
+    <div class="ng-tns-c361-9 ng-star-inserted">
+      
+        <div class="doc-viewer-item ng-tns-c361-9 ng-star-inserted">
+          <span class="no-link-link ng-tns-c361-9 ng-star-inserted">Root</span><!---->
+        </div><div class="doc-viewer-item ng-tns-c361-9 ng-star-inserted">
+          <span class="no-link-link ng-tns-c361-9 ng-star-inserted">Mutation</span><!---->
+        </div><!---->
+      <!----><!---->
+      <!---->
+      <!---->
+      <!---->
+    </div><!---->
+  </div>
+</div><!---->
+<div class="doc-viewer__last-updated ng-tns-c361-9 ng-star-inserted">Last updated: Jul 15, 2020, 4:25:07 PM</div><!---->
+<!---->
+<app-flex-resizer class="ng-tns-c361-9" _nghost-xin-c334=""><app-icon _ngcontent-xin-c334="" name="more-vertical"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-more-vertical">
+    <circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle>
+</svg></i-feather>
+</app-icon></app-flex-resizer>
+</app-doc-viewer>
+    </div>
+  </div>
+  <div class="dialogs ng-tns-c362-8">
+    <nz-modal class="ng-tns-c362-8"> <!----> </nz-modal><!---->
+    <app-subscription-url-dialog class="ng-tns-c362-8"><nz-modal> <!----> </nz-modal><!---->
+</app-subscription-url-dialog>
+    <app-history-dialog class="ng-tns-c362-8"><nz-modal> <!----> </nz-modal><!---->
+</app-history-dialog>
+    <app-dialog class="ng-tns-c362-8" _nghost-xin-c351=""><nz-modal _ngcontent-xin-c351=""> <!----> </nz-modal><!---->
+</app-dialog>
+    <app-dialog class="ng-tns-c362-8" _nghost-xin-c351=""><nz-modal _ngcontent-xin-c351=""> <!----> </nz-modal><!---->
+</app-dialog>
+  </div>
+</div>
+</app-window><!---->
+          <!---->
+            <app-window class="ng-tns-c362-18 ng-star-inserted"><!---->
+<div class="app-window__content ng-tns-c362-18">
+  <!---->
+  <app-url-box class="ng-tns-c362-18"><div class="url-box">
+  <button type="button" nz-dropdown="" nztrigger="click" track-id="http_verb" class="url-box__button btn btn-outline-primary url-box__button--method ant-dropdown-trigger" value="POST">
+    POST
+    ▼
+  </button><!---->
+  <!---->
+  <div class="url-box__input-container">
+    <!---->
+    <app-fancy-input track-id="set_url" placholder="Enter URL" class="url-box__input ng-untouched ng-pristine ng-valid" _nghost-xin-c338=""><div _ngcontent-xin-c338="" class="fancy-input-container"><div _ngcontent-xin-c338="" class="fancy-input-backdrop"><div _ngcontent-xin-c338="" class="fancy-input-content fancy-input-highlights"><span _ngcontent-xin-c338="" class="ng-star-inserted">http://172.18.0.2:3000/graphql</span><!----><!----><!----><!----></div></div><input _ngcontent-xin-c338="" type="text" class="fancy-input-content fancy-input-element ng-untouched ng-pristine ng-valid" placeholder=""></div></app-fancy-input>
+    <div class="url-box__input-actions">
+      <button type="button" nz-dropdown="" nztrigger="click" class="url-box__input-btn ant-dropdown-trigger">
+        <app-icon name="save"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-save">
+    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline>
+</svg></i-feather>
+</app-icon>
+      </button><!---->
+      <!---->
+      <button type="button" track-id="reload_docs" class="url-box__input-btn">
+        <app-icon name="refresh-ccw"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-refresh-ccw">
+    <polyline points="1 4 1 10 7 10"></polyline><polyline points="23 20 23 14 17 14"></polyline><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+</svg></i-feather>
+</app-icon>
+      </button><popper-content class="ng-star-inserted">
+    <div class="ngxp__container ngxp__animation tooltip-content" aria-hidden="true" role="popper" style="display: none; opacity: 0;">
+      <!---->
+      <div class="ngxp__inner ng-star-inserted">
+        
+      </div><!---->
+      <div class="ngxp__arrow"></div>
+
+    </div>
+  </popper-content><!----><!---->
+      <button type="button" track-id="show_docs" class="url-box__input-btn url-box__input-btn--active">
+        Docs
+      </button>
+    </div>
+  </div>
+  <button track-id="set_request" class="app-button url-box__button url-box__button--send active-primary ng-star-inserted">
+    <!---->
+    <span class="ng-star-inserted">Send Request</span><!---->
+  </button><!---->
+  <!---->
+  <!---->
+</div>
+</app-url-box>
+  <div class="main-content-area ng-tns-c362-18">
+    <div data-resize-container="" class="main-content-row ng-tns-c362-18">
+      <app-query-editor class="ng-tns-c362-18" _nghost-xin-c335=""><div _ngcontent-xin-c335="" class="query-editor-container">
+  <ngx-codemirror _ngcontent-xin-c335="" class="query-editor__input ng-valid ng-touched ng-dirty"><textarea autocomplete="off" class="ngx-codemirror ngx-codemirror--focused" name="codemirror" style="display: none;">    </textarea><div class="CodeMirror cm-s-default CodeMirror-wrap CodeMirror-focused"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 254.188px; left: 109.156px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 467px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; margin-bottom: -15px; border-right-width: 35px; min-height: 467px; padding-right: 15px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div style="position: relative;"></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 70.1562px; top: 250.188px; height: 19px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-linewidget" cm-ignore-events="true"><div class="query-editor__line-widget">► (Run query)</div></div><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">query</span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span><span class="cm-property">files</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp;</span><span class="cm-property">pageInfo</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">hasNextPage</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">hasPreviousPage</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">startCursor</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">endCursor</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp;</span><span class="cm-punctuation">}</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp;</span><span class="cm-property">edges</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">node</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">id</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">url</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property CodeMirror-lint-mark-error">name</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">meta</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">createdAt</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">updatedAt</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-punctuation">}</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">cursor</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp;</span><span class="cm-punctuation">}</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp;</span><span class="cm-property">totalCount</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">21</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span><span class="cm-punctuation">}</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">23</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-punctuation">}</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 35px; width: 1px; border-bottom: 0px solid transparent; top: 467px;"></div><div class="CodeMirror-gutters" style="height: 502px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div></ngx-codemirror>
+</div>
+<div _ngcontent-xin-c335="" class="variables-editor-container">
+  <div _ngcontent-xin-c335="" track-id="toggle_variables" class="variables-editor--title">Variables</div>
+  <div _ngcontent-xin-c335="" class="variables-editor-inner hide">
+    <div _ngcontent-xin-c335="" class="variables-editor-input-container">
+      <app-variables-editor _ngcontent-xin-c335="" _nghost-xin-c332=""><ngx-codemirror _ngcontent-xin-c332="" class="set-variable-textarea mousetrap ng-untouched ng-pristine ng-valid"><textarea autocomplete="off" class="ngx-codemirror" name="codemirror" style="display: none;">    </textarea><div class="CodeMirror cm-s-default cm-s-variable-editor cm-s-mousetrap CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px;"><div style="position: relative;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"></div><div class="CodeMirror-code" role="presentation"></div></div></div></div></div><div style="position: absolute; height: 50px; width: 1px;"></div><div class="CodeMirror-gutters" style="left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 1px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div></ngx-codemirror>
+</app-variables-editor>
+    </div>
+    <div _ngcontent-xin-c335="" class="variables-files-container">
+      <button _ngcontent-xin-c335="" track-id="add_file_variable" class="variables-add-files-button">Add files</button>
+
+      <a _ngcontent-xin-c335="" href="https://sirmuel.design/working-with-file-uploads-using-altair-graphql-d2f86dc8261f" target="_blank" rel="noopener">
+        <app-icon _ngcontent-xin-c335="" name="info"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-info">
+    <circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line>
+</svg></i-feather>
+</app-icon>
+        Learn more
+      </a>
+
+      <div _ngcontent-xin-c335="" class="variables-files-list">
+        <!---->
+      </div>
+    </div>
+  </div>
+</div>
+<app-flex-resizer _ngcontent-xin-c335="" _nghost-xin-c334="" class="is-right"><app-icon _ngcontent-xin-c334="" name="more-vertical"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-more-vertical">
+    <circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle>
+</svg></i-feather>
+</app-icon></app-flex-resizer>
+</app-query-editor>
+      <app-query-result class="ng-tns-c362-18" _nghost-xin-c337=""><div _ngcontent-xin-c337="" class="query-result-container">
+  <div _ngcontent-xin-c337="" class="query-result__normal-container">
+    <!---->
+    
+    <div _ngcontent-xin-c337="" class="app-result">
+      <div _ngcontent-xin-c337="" class="response-stats">
+        <div _ngcontent-xin-c337="" class="left">
+          <span _ngcontent-xin-c337="" class="response-status-code response-stats__item" data-status-code="200">200 OK</span>
+          <span _ngcontent-xin-c337="" class="response-time response-stats__item"><app-icon _ngcontent-xin-c337="" name="clock"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-clock">
+    <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg></i-feather>
+</app-icon> 90ms</span>
+        </div>
+        <div _ngcontent-xin-c337="" class="right">
+        </div>
+      </div>
+      <div _ngcontent-xin-c337="" class="query-result__bottom-actions">
+        <button _ngcontent-xin-c337="" track-id="download_result" class="query-result__download-button">
+          <app-icon _ngcontent-xin-c337="" name="download"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-download">
+    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line>
+</svg></i-feather>
+</app-icon>
+          Download
+        </button>
+        <!---->
+      </div>
+      <ngx-codemirror _ngcontent-xin-c337="" class="app-query-result-textarea ng-untouched ng-pristine ng-valid"><textarea autocomplete="off" class="ngx-codemirror" name="codemirror" style="display: none;">    </textarea><div class="CodeMirror cm-s-default cm-s-query-result CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 43px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 749px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; margin-bottom: -15px; border-right-width: 35px; min-height: 749px; padding-right: 15px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>20</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 19px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span><span class="cm-def">"data"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp;</span><span class="cm-property">"files"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"pageInfo"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"hasNextPage"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-builtin">false</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"hasPreviousPage"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-builtin">false</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"startCursor"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"YXJyYXljb25uZWN0aW9uOjA="</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"endCursor"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"YXJyYXljb25uZWN0aW9uOjA="</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-punctuation">},</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"edges"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">[</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"node"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"id"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"RmlsZTozYzZlMjUzZi1mOTJmLTQ5ODgtOTA1NC1kMDgwOWU4MDdhMTA="</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"url"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"https://storage.googleapis.com/nova-benefits/brain.png?GoogleAccessId=cloud-store%40fine-transit-282812.iam.gserviceaccount.com&amp;Expires=2517436800&amp;Signature=YEIWqiNP2ogZAf36wnF%2Farx9U2BBsB%2Bvp3SiQm0IpLC3Z6kN0BuCt0em01Mu2ONpxoKkkmjj%2FKr3Mb4RrWKKV5IbMfPc6UA91CDpb9OQij8LG5DyYpbDHVcZJfLkUO53a%2FUA9uECNye5cWNH8Lthl9raQ8W%2BC202tYPRy0%2BDWqxYBghcBtN7W4McMRpGajDnQIRfoXwyjr51nHxazfMXUZAeYu7QjpyDkPG5uaZLxRMtUS1n5k4xWHXDB%2FHgE%2BdU3AQ5KjYz4zpNNFZDKjIOmO2f0xeb%2B5vAkSfatpezXNBWxZE%2FLpLQWLjc3yx7SthT%2B27dNPilt7qVNFDrx9PJwA%3D%3D"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"meta"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">{},</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"createdAt"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"2020-07-20T17:39:43+00:00"</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"updatedAt"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"2020-07-20T17:39:43+00:00"</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-punctuation">},</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"cursor"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"YXJyYXljb25uZWN0aW9uOjA="</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-punctuation">}</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">21</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-punctuation">],</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp; &nbsp;</span><span class="cm-property">"totalCount"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">23</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp;</span><span class="cm-punctuation">}</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">24</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span><span class="cm-punctuation">}</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">25</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-punctuation">}</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 35px; width: 1px; border-bottom: 0px solid transparent; top: 749px;"></div><div class="CodeMirror-gutters" style="height: 784px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div></ngx-codemirror>
+    </div>
+  </div>
+  <div _ngcontent-xin-c337="" class="query-result__subscription-container hide">
+    <div _ngcontent-xin-c337="" class="subscription-result">
+      <div _ngcontent-xin-c337="" class="subscription-result__actions">
+          <div _ngcontent-xin-c337="" class="subscription-result__actions-left">
+            <div _ngcontent-xin-c337="" class="subscription-result__actions-url">
+              ws://localhost/subscriptions
+            </div>
+          </div>
+          <div _ngcontent-xin-c337="" class="subscription-result__actions-right">
+            <button _ngcontent-xin-c337="" track-id="clear_subscription" class="subscription-button">Clear</button>
+            <button _ngcontent-xin-c337="" track-id="stop_subscription" class="subscription-button subscription-button--stop">Stop</button>
+          </div>
+      </div>
+      <div _ngcontent-xin-c337="" class="subscription-result__list-wrapper">
+        <!---->
+      </div>
+      <div _ngcontent-xin-c337="" class="subscription-result__float-actions">
+        <button _ngcontent-xin-c337="" class="subscription-result__float-action-button">
+          Autoscroll
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</app-query-result>
+      <app-doc-viewer class="ng-tns-c362-18 ng-tns-c361-19"><div class="app-doc-viewer ng-tns-c361-19 ng-star-inserted">
+  <!---->
+  <div class="doc-viewer-header ng-tns-c361-19">
+    <div class="doc-viewer-navigation ng-tns-c361-19">
+      <div class="doc-viewer-navigation--left ng-tns-c361-19">
+        <!---->
+        <div class="doc-viewer-navigation__option ng-tns-c361-19 ng-star-inserted">
+          <app-icon name="home" class="ng-tns-c361-19"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-home">
+    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg></i-feather>
+</app-icon>
+        </div><!---->
+      </div>
+      <div class="doc-viewer-navigation--right ng-tns-c361-19">
+        <div nz-dropdown="" nztrigger="click" class="doc-viewer-navigation__option ng-tns-c361-19 ant-dropdown-trigger">
+          <app-icon name="more-horizontal" class="ng-tns-c361-19"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-more-horizontal">
+    <circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle>
+</svg></i-feather>
+</app-icon>
+        </div><!---->
+        <!---->
+        <div class="doc-viewer-navigation__option ng-tns-c361-19">
+          <app-icon name="x" class="ng-tns-c361-19"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-x">
+    <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+</svg></i-feather>
+</app-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="doc-viewer-search-wrapper ng-tns-c361-19">
+    <div class="ngui-auto-complete-wrapper" style="position: relative;"><input ngui-auto-complete="" value-property-name="search" display-property-name="search" class="doc-viewer-search-input ng-tns-c361-19 ng-untouched ng-pristine ng-valid" placeholder="Search docs..." autocomplete="off"></div><!---->
+  </div>
+  <div class="doc-viewer-items ng-tns-c361-19">
+    <div class="ng-tns-c361-19 ng-star-inserted">
+      <!---->
+      <!---->
+      
+        <app-doc-viewer-field _nghost-xin-c359="" class="ng-tns-c361-19 ng-star-inserted">
+  <div _ngcontent-xin-c359="" class="doc-viewer-section ng-star-inserted">
+    
+    <div _ngcontent-xin-c359="" class="doc-viewer-item doc-viewer-item-field">
+      <div _ngcontent-xin-c359="" class="doc-viewer-item-query-inner">
+        upsertFile
+      </div>
+      <div _ngcontent-xin-c359="" markdown="" class="doc-viewer-item-query-description"><p>Creates or updates a file url.</p>
+</div>
+      <div _ngcontent-xin-c359="" class="doc-viewer-item-query-inner">
+        <button _ngcontent-xin-c359="" track-id="add_query" class="doc-viewer-item-query-add-btn">
+          Add Query<!----><!---->
+          <!---->
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div _ngcontent-xin-c359="" class="doc-viewer-section doc-viewer-arguments ng-star-inserted">
+    <div _ngcontent-xin-c359="" class="doc-viewer-section-title">Arguments</div>
+    <div _ngcontent-xin-c359="" class="doc-viewer-item doc-viewer-item-query ng-star-inserted">
+      <div _ngcontent-xin-c359="" class="doc-viewer-item-query-inner">
+        <span _ngcontent-xin-c359="" class="no-link-link">
+          input
+          <!---->
+        </span>
+        <span _ngcontent-xin-c359="" class="doc-viewer-item-type doc-viewer-item-query-type no-link-link">
+          UpsertFileInput!
+        </span>
+      </div>
+      <div _ngcontent-xin-c359="" markdown="" class="doc-viewer-item-query-description"></div>
+    </div><!---->
+  </div><!---->
+<!----><!---->
+
+
+<div _ngcontent-xin-c359="" class="doc-viewer-section-title">Type</div>
+
+  <app-doc-viewer-type _ngcontent-xin-c359="" _nghost-xin-c358="" class="ng-star-inserted">
+  <div _ngcontent-xin-c358="" class="doc-viewer-section ng-star-inserted">
+    
+    <div _ngcontent-xin-c358="" class="doc-viewer-item doc-viewer-item-field">
+      <div _ngcontent-xin-c358="" class="doc-viewer-item-query-inner">
+        UpsertFilePayload
+        <!---->
+        <!---->
+      </div>
+      <!---->
+    </div>
+  </div>
+
+  <!---->
+  
+  <!---->
+  
+  <div _ngcontent-xin-c358="" class="doc-viewer-section doc-viewer-fields ng-star-inserted">
+    <div _ngcontent-xin-c358="" class="doc-viewer-section-title">Fields</div>
+    <div _ngcontent-xin-c358="" class="doc-viewer-item doc-viewer-item-query ng-star-inserted">
+      <div _ngcontent-xin-c358="" class="doc-viewer-item-query-inner">
+        <span _ngcontent-xin-c358="" track-id="gotofield_docs" class="no-link-link">
+          file
+        </span>
+        <!---->
+        <span _ngcontent-xin-c358="" class="doc-viewer-item-type doc-viewer-item-query-type no-link-link">
+          File
+        </span>
+      </div>
+      <!---->
+      <div _ngcontent-xin-c358="" markdown="" class="doc-viewer-item-query-description"></div>
+      <button _ngcontent-xin-c358="" track-id="add_query" class="doc-viewer-item-query-add-btn">
+        <!---->
+        Add Fragment<!----><!---->
+      </button>
+    </div><div _ngcontent-xin-c358="" class="doc-viewer-item doc-viewer-item-query ng-star-inserted">
+      <div _ngcontent-xin-c358="" class="doc-viewer-item-query-inner">
+        <span _ngcontent-xin-c358="" track-id="gotofield_docs" class="no-link-link">
+          clientMutationId
+        </span>
+        <!---->
+        <span _ngcontent-xin-c358="" class="doc-viewer-item-type doc-viewer-item-query-type no-link-link">
+          String
+        </span>
+      </div>
+      <!---->
+      <div _ngcontent-xin-c358="" markdown="" class="doc-viewer-item-query-description"></div>
+      <button _ngcontent-xin-c358="" track-id="add_query" class="doc-viewer-item-query-add-btn">
+        <!---->
+        Add Fragment<!----><!---->
+      </button>
+    </div><!---->
+  </div><!---->
+  
+  <!---->
+  
+  <!---->
+<!---->
+</app-doc-viewer-type>
+<!----><!---->
+</app-doc-viewer-field>
+      <!----><!---->
+      <!---->
+    </div><!---->
+  </div>
+</div><!---->
+<div class="doc-viewer__last-updated ng-tns-c361-19 ng-star-inserted">Last updated: Jul 16, 2020, 1:19:02 AM</div><!---->
+<!---->
+<app-flex-resizer class="ng-tns-c361-19" _nghost-xin-c334=""><app-icon _ngcontent-xin-c334="" name="more-vertical"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-more-vertical">
+    <circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle>
+</svg></i-feather>
+</app-icon></app-flex-resizer>
+</app-doc-viewer>
+    </div>
+  </div>
+  <div class="dialogs ng-tns-c362-18">
+    <nz-modal class="ng-tns-c362-18"> <!----> </nz-modal><!---->
+    <app-subscription-url-dialog class="ng-tns-c362-18"><nz-modal> <!----> </nz-modal><!---->
+</app-subscription-url-dialog>
+    <app-history-dialog class="ng-tns-c362-18"><nz-modal> <!----> </nz-modal><!---->
+</app-history-dialog>
+    <app-dialog class="ng-tns-c362-18" _nghost-xin-c351=""><nz-modal _ngcontent-xin-c351=""> <!----> </nz-modal><!---->
+</app-dialog>
+    <app-dialog class="ng-tns-c362-18" _nghost-xin-c351=""><nz-modal _ngcontent-xin-c351=""> <!----> </nz-modal><!---->
+</app-dialog>
+  </div>
+</div>
+</app-window><!---->
+          <!---->
+            <app-window class="ng-tns-c362-13 ng-star-inserted hide"><!---->
+<div class="app-window__content ng-tns-c362-13">
+  <!---->
+  <app-url-box class="ng-tns-c362-13"><div class="url-box">
+  <button type="button" nz-dropdown="" nztrigger="click" track-id="http_verb" class="url-box__button btn btn-outline-primary url-box__button--method ant-dropdown-trigger" value="POST">
+    POST
+    ▼
+  </button><!---->
+  <!---->
+  <div class="url-box__input-container">
+    <!---->
+    <app-fancy-input track-id="set_url" placholder="Enter URL" class="url-box__input ng-untouched ng-pristine ng-valid" _nghost-xin-c338=""><div _ngcontent-xin-c338="" class="fancy-input-container"><div _ngcontent-xin-c338="" class="fancy-input-backdrop"><div _ngcontent-xin-c338="" class="fancy-input-content fancy-input-highlights"><span _ngcontent-xin-c338="" class="ng-star-inserted">http://172.18.0.2:3000/graphql</span><!----><!----><!----><!----></div></div><input _ngcontent-xin-c338="" type="text" class="fancy-input-content fancy-input-element ng-untouched ng-pristine ng-valid" placeholder=""></div></app-fancy-input>
+    <div class="url-box__input-actions">
+      <button type="button" nz-dropdown="" nztrigger="click" class="url-box__input-btn ant-dropdown-trigger">
+        <app-icon name="save"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-save">
+    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline>
+</svg></i-feather>
+</app-icon>
+      </button><!---->
+      <!---->
+      <button type="button" track-id="reload_docs" class="url-box__input-btn">
+        <app-icon name="refresh-ccw"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-refresh-ccw">
+    <polyline points="1 4 1 10 7 10"></polyline><polyline points="23 20 23 14 17 14"></polyline><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+</svg></i-feather>
+</app-icon>
+      </button><popper-content class="ng-star-inserted">
+    <div class="ngxp__container ngxp__animation tooltip-content" aria-hidden="true" role="popper" style="display: none; opacity: 0;">
+      <!---->
+      <div class="ngxp__inner ng-star-inserted">
+        
+      </div><!---->
+      <div class="ngxp__arrow"></div>
+
+    </div>
+  </popper-content><!----><!---->
+      <button type="button" track-id="show_docs" class="url-box__input-btn url-box__input-btn--active">
+        Docs
+      </button>
+    </div>
+  </div>
+  <button track-id="set_request" class="app-button url-box__button url-box__button--send active-primary ng-star-inserted">
+    <!---->
+    <span class="ng-star-inserted">Send Request</span><!---->
+  </button><!---->
+  <!---->
+  <!---->
+</div>
+</app-url-box>
+  <div class="main-content-area ng-tns-c362-13">
+    <div data-resize-container="" class="main-content-row ng-tns-c362-13">
+      <app-query-editor class="ng-tns-c362-13" _nghost-xin-c335=""><div _ngcontent-xin-c335="" class="query-editor-container">
+  <ngx-codemirror _ngcontent-xin-c335="" class="query-editor__input ng-untouched ng-pristine ng-valid"><textarea autocomplete="off" class="ngx-codemirror" name="codemirror" style="display: none;">    </textarea><div class="CodeMirror cm-s-default CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 43px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="bottom: 0px;"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; padding-right: 0px; padding-bottom: 0px; margin-bottom: -15px; border-right-width: 35px; min-height: 84px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>4</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 19px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">mutation</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span><span class="cm-property">upsertFile</span><span class="cm-punctuation">(</span><span class="cm-attribute">input</span><span class="cm-punctuation">:{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp; &nbsp;</span><span class="cm-attribute">url</span><span class="cm-ws"> </span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">[</span><span class="cm-string-2">Upload</span><span class="cm-punctuation">]</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span><span class="cm-punctuation">}</span><span class="cm-punctuation CodeMirror-lint-mark-error">)</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 35px; width: 1px; border-bottom: 0px solid transparent; top: 84px;"></div><div class="CodeMirror-gutters" style="left: 0px; height: 119px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div></ngx-codemirror>
+</div>
+<div _ngcontent-xin-c335="" class="variables-editor-container">
+  <div _ngcontent-xin-c335="" track-id="toggle_variables" class="variables-editor--title">Variables</div>
+  <div _ngcontent-xin-c335="" class="variables-editor-inner hide">
+    <div _ngcontent-xin-c335="" class="variables-editor-input-container">
+      <app-variables-editor _ngcontent-xin-c335="" _nghost-xin-c332=""><ngx-codemirror _ngcontent-xin-c332="" class="set-variable-textarea mousetrap ng-untouched ng-pristine ng-valid"><textarea autocomplete="off" class="ngx-codemirror" name="codemirror" style="display: none;">    </textarea><div class="CodeMirror cm-s-default cm-s-variable-editor cm-s-mousetrap CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px;"><div style="position: relative;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"></div><div class="CodeMirror-code" role="presentation"></div></div></div></div></div><div style="position: absolute; height: 50px; width: 1px;"></div><div class="CodeMirror-gutters" style="left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 1px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div></ngx-codemirror>
+</app-variables-editor>
+    </div>
+    <div _ngcontent-xin-c335="" class="variables-files-container">
+      <button _ngcontent-xin-c335="" track-id="add_file_variable" class="variables-add-files-button">Add files</button>
+
+      <a _ngcontent-xin-c335="" href="https://sirmuel.design/working-with-file-uploads-using-altair-graphql-d2f86dc8261f" target="_blank" rel="noopener">
+        <app-icon _ngcontent-xin-c335="" name="info"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-info">
+    <circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line>
+</svg></i-feather>
+</app-icon>
+        Learn more
+      </a>
+
+      <div _ngcontent-xin-c335="" class="variables-files-list">
+        <!---->
+      </div>
+    </div>
+  </div>
+</div>
+<app-flex-resizer _ngcontent-xin-c335="" _nghost-xin-c334="" class="is-right"><app-icon _ngcontent-xin-c334="" name="more-vertical"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-more-vertical">
+    <circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle>
+</svg></i-feather>
+</app-icon></app-flex-resizer>
+</app-query-editor>
+      <app-query-result class="ng-tns-c362-13" _nghost-xin-c337=""><div _ngcontent-xin-c337="" class="query-result-container">
+  <div _ngcontent-xin-c337="" class="query-result__normal-container">
+    <!---->
+    
+    <div _ngcontent-xin-c337="" class="app-result">
+      <div _ngcontent-xin-c337="" class="response-stats">
+        <div _ngcontent-xin-c337="" class="left">
+          <span _ngcontent-xin-c337="" class="response-status-code response-stats__item" data-status-code="0">0 Unknown Error</span>
+          <span _ngcontent-xin-c337="" class="response-time response-stats__item"><app-icon _ngcontent-xin-c337="" name="clock"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-clock">
+    <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg></i-feather>
+</app-icon> 31ms</span>
+        </div>
+        <div _ngcontent-xin-c337="" class="right">
+        </div>
+      </div>
+      <div _ngcontent-xin-c337="" class="query-result__bottom-actions">
+        <button _ngcontent-xin-c337="" track-id="download_result" class="query-result__download-button">
+          <app-icon _ngcontent-xin-c337="" name="download"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-download">
+    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line>
+</svg></i-feather>
+</app-icon>
+          Download
+        </button>
+        <!---->
+      </div>
+      <ngx-codemirror _ngcontent-xin-c337="" class="app-query-result-textarea ng-untouched ng-pristine ng-valid"><textarea autocomplete="off" class="ngx-codemirror" name="codemirror" style="display: none;">    </textarea><div class="CodeMirror cm-s-default cm-s-query-result CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 43px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="bottom: 0px;"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; padding-right: 0px; padding-bottom: 0px; margin-bottom: -15px; border-right-width: 35px; min-height: 122px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 18.5px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-invalidchar">"Server Error. Check that your server is up and running. You can check the console for more details on the network errors."</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 35px; width: 1px; border-bottom: 0px solid transparent; top: 122px;"></div><div class="CodeMirror-gutters" style="left: 0px; height: 157px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div></ngx-codemirror>
+    </div>
+  </div>
+  <div _ngcontent-xin-c337="" class="query-result__subscription-container hide">
+    <div _ngcontent-xin-c337="" class="subscription-result">
+      <div _ngcontent-xin-c337="" class="subscription-result__actions">
+          <div _ngcontent-xin-c337="" class="subscription-result__actions-left">
+            <div _ngcontent-xin-c337="" class="subscription-result__actions-url">
+              ws://localhost/subscriptions
+            </div>
+          </div>
+          <div _ngcontent-xin-c337="" class="subscription-result__actions-right">
+            <button _ngcontent-xin-c337="" track-id="clear_subscription" class="subscription-button">Clear</button>
+            <button _ngcontent-xin-c337="" track-id="stop_subscription" class="subscription-button subscription-button--stop">Stop</button>
+          </div>
+      </div>
+      <div _ngcontent-xin-c337="" class="subscription-result__list-wrapper">
+        <!---->
+      </div>
+      <div _ngcontent-xin-c337="" class="subscription-result__float-actions">
+        <button _ngcontent-xin-c337="" class="subscription-result__float-action-button">
+          Autoscroll
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</app-query-result>
+      <app-doc-viewer class="ng-tns-c362-13 ng-tns-c361-14"><div class="app-doc-viewer ng-tns-c361-14 ng-star-inserted">
+  <!---->
+  <div class="doc-viewer-header ng-tns-c361-14">
+    <div class="doc-viewer-navigation ng-tns-c361-14">
+      <div class="doc-viewer-navigation--left ng-tns-c361-14">
+        <!---->
+        <div class="doc-viewer-navigation__option ng-tns-c361-14 ng-star-inserted">
+          <app-icon name="home" class="ng-tns-c361-14"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-home">
+    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg></i-feather>
+</app-icon>
+        </div><!---->
+      </div>
+      <div class="doc-viewer-navigation--right ng-tns-c361-14">
+        <div nz-dropdown="" nztrigger="click" class="doc-viewer-navigation__option ng-tns-c361-14 ant-dropdown-trigger">
+          <app-icon name="more-horizontal" class="ng-tns-c361-14"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-more-horizontal">
+    <circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle>
+</svg></i-feather>
+</app-icon>
+        </div><!---->
+        <!---->
+        <div class="doc-viewer-navigation__option ng-tns-c361-14">
+          <app-icon name="x" class="ng-tns-c361-14"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-x">
+    <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+</svg></i-feather>
+</app-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="doc-viewer-search-wrapper ng-tns-c361-14">
+    <div class="ngui-auto-complete-wrapper" style="position: relative;"><input ngui-auto-complete="" value-property-name="search" display-property-name="search" class="doc-viewer-search-input ng-tns-c361-14 ng-untouched ng-pristine ng-valid" placeholder="Search docs..." autocomplete="off"></div><!---->
+  </div>
+  <div class="doc-viewer-items ng-tns-c361-14">
+    <div class="ng-tns-c361-14 ng-star-inserted">
+      <!---->
+      
+        <app-doc-viewer-type _nghost-xin-c358="" class="ng-tns-c361-14 ng-star-inserted">
+  <div _ngcontent-xin-c358="" class="doc-viewer-section ng-star-inserted">
+    
+    <div _ngcontent-xin-c358="" class="doc-viewer-item doc-viewer-item-field">
+      <div _ngcontent-xin-c358="" class="doc-viewer-item-query-inner">
+        UpsertFileInput
+        <!---->
+        <!---->
+      </div>
+      <!---->
+    </div>
+  </div>
+
+  <!---->
+  
+  <!---->
+  
+  <div _ngcontent-xin-c358="" class="doc-viewer-section doc-viewer-fields ng-star-inserted">
+    <div _ngcontent-xin-c358="" class="doc-viewer-section-title">Fields</div>
+    <div _ngcontent-xin-c358="" class="doc-viewer-item doc-viewer-item-query ng-star-inserted">
+      <div _ngcontent-xin-c358="" class="doc-viewer-item-query-inner">
+        <span _ngcontent-xin-c358="" track-id="gotofield_docs" class="no-link-link">
+          id
+        </span>
+        <!---->
+        <span _ngcontent-xin-c358="" class="doc-viewer-item-type doc-viewer-item-query-type no-link-link">
+          ID
+        </span>
+      </div>
+      <!---->
+      <div _ngcontent-xin-c358="" markdown="" class="doc-viewer-item-query-description"></div>
+      <button _ngcontent-xin-c358="" track-id="add_query" class="doc-viewer-item-query-add-btn">
+        <!---->
+        Add Fragment<!----><!---->
+      </button>
+    </div><div _ngcontent-xin-c358="" class="doc-viewer-item doc-viewer-item-query ng-star-inserted">
+      <div _ngcontent-xin-c358="" class="doc-viewer-item-query-inner">
+        <span _ngcontent-xin-c358="" track-id="gotofield_docs" class="no-link-link">
+          url
+        </span>
+        <!---->
+        <span _ngcontent-xin-c358="" class="doc-viewer-item-type doc-viewer-item-query-type no-link-link">
+          Upload
+        </span>
+      </div>
+      <!---->
+      <div _ngcontent-xin-c358="" markdown="" class="doc-viewer-item-query-description"></div>
+      <button _ngcontent-xin-c358="" track-id="add_query" class="doc-viewer-item-query-add-btn">
+        <!---->
+        Add Fragment<!----><!---->
+      </button>
+    </div><div _ngcontent-xin-c358="" class="doc-viewer-item doc-viewer-item-query ng-star-inserted">
+      <div _ngcontent-xin-c358="" class="doc-viewer-item-query-inner">
+        <span _ngcontent-xin-c358="" track-id="gotofield_docs" class="no-link-link">
+          meta
+        </span>
+        <!---->
+        <span _ngcontent-xin-c358="" class="doc-viewer-item-type doc-viewer-item-query-type no-link-link">
+          JSONObject
+        </span>
+      </div>
+      <!---->
+      <div _ngcontent-xin-c358="" markdown="" class="doc-viewer-item-query-description"></div>
+      <button _ngcontent-xin-c358="" track-id="add_query" class="doc-viewer-item-query-add-btn">
+        <!---->
+        Add Fragment<!----><!---->
+      </button>
+    </div><div _ngcontent-xin-c358="" class="doc-viewer-item doc-viewer-item-query ng-star-inserted">
+      <div _ngcontent-xin-c358="" class="doc-viewer-item-query-inner">
+        <span _ngcontent-xin-c358="" track-id="gotofield_docs" class="no-link-link">
+          clientMutationId
+        </span>
+        <!---->
+        <span _ngcontent-xin-c358="" class="doc-viewer-item-type doc-viewer-item-query-type no-link-link">
+          String
+        </span>
+      </div>
+      <!---->
+      <div _ngcontent-xin-c358="" markdown="" class="doc-viewer-item-query-description"></div>
+      <button _ngcontent-xin-c358="" track-id="add_query" class="doc-viewer-item-query-add-btn">
+        <!---->
+        Add Fragment<!----><!---->
+      </button>
+    </div><!---->
+  </div><!---->
+  
+  <!---->
+  
+  <!---->
+<!---->
+</app-doc-viewer-type><!---->
+      <!----><!---->
+      <!---->
+      <!---->
+    </div><!---->
+  </div>
+</div><!---->
+<div class="doc-viewer__last-updated ng-tns-c361-14 ng-star-inserted">Last updated: Jul 16, 2020, 1:11:54 AM</div><!---->
+<!---->
+<app-flex-resizer class="ng-tns-c361-14" _nghost-xin-c334=""><app-icon _ngcontent-xin-c334="" name="more-vertical"><i-feather class="app-icon" _nghost-xin-c330=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-more-vertical">
+    <circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle>
+</svg></i-feather>
+</app-icon></app-flex-resizer>
+</app-doc-viewer>
+    </div>
+  </div>
+  <div class="dialogs ng-tns-c362-13">
+    <nz-modal class="ng-tns-c362-13"> <!----> </nz-modal><!---->
+    <app-subscription-url-dialog class="ng-tns-c362-13"><nz-modal> <!----> </nz-modal><!---->
+</app-subscription-url-dialog>
+    <app-history-dialog class="ng-tns-c362-13"><nz-modal> <!----> </nz-modal><!---->
+</app-history-dialog>
+    <app-dialog class="ng-tns-c362-13" _nghost-xin-c351=""><nz-modal _ngcontent-xin-c351=""> <!----> </nz-modal><!---->
+</app-dialog>
+    <app-dialog class="ng-tns-c362-13" _nghost-xin-c351=""><nz-modal _ngcontent-xin-c351=""> <!----> </nz-modal><!---->
+</app-dialog>
+  </div>
+</div>
+</app-window><!---->
+          <!----><!---->
+        </nz-content>
+        <div class="dialogs">
+          <app-environment-manager _nghost-xin-c353=""><nz-modal _ngcontent-xin-c353=""> <!----> </nz-modal><!---->
+</app-environment-manager>
+          <app-plugin-manager><nz-modal> <!----> </nz-modal><!---->
+</app-plugin-manager>
+          <app-settings-dialog _nghost-xin-c347="">
+<nz-modal _ngcontent-xin-c347=""> <!----> </nz-modal><!---->
+</app-settings-dialog>
+          <app-import-curl-dialog _nghost-xin-c348=""><nz-modal _ngcontent-xin-c348=""> <!----> </nz-modal><!---->
+</app-import-curl-dialog>
+            <app-edit-collection-dialog _nghost-xin-c352=""><nz-modal _ngcontent-xin-c352=""> <!----> </nz-modal><!---->
+</app-edit-collection-dialog>
+        </div>
+        <nz-alert nzbanner="" nzcloseable="" class="ng-tns-c72-30 ng-star-inserted"><div class="ant-alert ng-trigger ng-trigger-slideAlertMotion ng-tns-c72-30 ant-alert-warning ant-alert-banner ant-alert-closable ng-star-inserted"><i nz-icon="" class="anticon ant-alert-icon ng-tns-c72-30 anticon-info-circle ng-star-inserted" style=""><svg viewBox="64 64 896 896" focusable="false" fill="currentColor" width="1em" height="1em" class="ng-tns-c72-30" data-icon="info-circle" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm32 664c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V456c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v272zm-32-344a48.01 48.01 0 010-96 48.01 48.01 0 010 96z"></path></svg></i><!----><!----><span class="ant-alert-message ng-tns-c72-30 ng-star-inserted" style="">
+          <span class="alert-text ng-star-inserted">
+              Do you find this app useful? Would you mind supporting its development?
+          </span>
+          <button track-id="donate" class="btn alert-action ng-star-inserted">Donate</button>
+        <!----></span><!----><!----><button type="button" tabindex="0" class="ant-alert-close-icon ng-tns-c72-30 ng-star-inserted" style=""><!----><i nz-icon="" nztype="close" class="anticon ng-tns-c72-30 anticon-close ng-star-inserted"><svg viewBox="64 64 896 896" focusable="false" fill="currentColor" width="1em" height="1em" class="ng-tns-c72-30" data-icon="close" aria-hidden="true"><path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 00203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"></path></svg></i><!----></button><!----></div><!----></nz-alert><!---->
+        <!---->
+      </nz-layout>
+    </nz-layout>
+  </nz-layout>
+<div class="cdk-overlay-container app-overlay-container"></div></div>
+</app-root>
+  <script rel="preload" as="script" type="text/javascript" src="./Altair_files/runtime.js"></script>
+  <script rel="preload" as="script" type="text/javascript" src="./Altair_files/polyfills.js"></script>
+  <script rel="preload" as="script" type="text/javascript" src="./Altair_files/main.js"></script>
+<script>
+        const altairOpts = {
+            endpointURL: `/graphql`,
+            subscriptionsEndpoint: `ws://localhost/subscriptions`,
+            initialQuery: `{ getData { id name surname } }`,
+            
+            
+            
+            
+            
+        };
+        AltairGraphQL.init(altairOpts);
+    </script>
+
+
+</body></html>
