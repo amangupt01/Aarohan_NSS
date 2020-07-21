@@ -44,7 +44,7 @@
 						<!-- First Section -->
 						<section id="first" class="main special">
 							<header class="major">
-								<h2>CLass 11</h2>
+								<h2>Class 11</h2>
 							</header>
 							<div class="collapse-card" >
 								<div class="collapse-card__heading">
@@ -116,7 +116,7 @@
 						<!-- Second Section -->
 							<section id="second" class="main special">
 								<header class="major">
-									<h2>CLass 12</h2>
+									<h2>Class 12</h2>
 								</header>
                                 <div class="collapse-card" >
                                     <div class="collapse-card__heading">
@@ -230,7 +230,10 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
             <script src="assets/js/paper-collapse.min.js"></script>
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+			<script>
+				(function(){!function(e){"use strict";e.fn.paperCollapse=function(o){var a;return a=e.extend({},e.fn.paperCollapse.defaults,o),e(this).find(".collapse-card__heading").add(a.closeHandler).click(function(){e(this).closest(".collapse-card").hasClass("active")?(a.onHide.call(this),e(this).closest(".collapse-card").removeClass("active"),e(this).closest(".collapse-card").find(".collapse-card__body").slideUp(a.animationDuration,a.onHideComplete)):(a.onShow.call(this),e(this).closest(".collapse-card").addClass("active"),e(this).closest(".collapse-card").find(".collapse-card__body").slideDown(a.animationDuration,a.onShowComplete))}),this},e.fn.paperCollapse.defaults={animationDuration:400,easing:"swing",closeHandler:".collapse-card__close_handler",onShow:function(){},onHide:function(){},onShowComplete:function(){},onHideComplete:function(){}}}(jQuery)}).call(this);
+			</script>
             <script>
                 $(function () {
                     $(".collapse-card").paperCollapse();
